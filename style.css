@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 60px;
+}
+.items{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#items1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: aqua;
+}
+
+#items2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: blueviolet;
+}
+#items3{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: cadetblue;
+}
+#items4{
+    background-color: cadetblue;
+}
+#items5{
+    background-color: cadetblue;
+}
+#items6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(0, 225, 255);
+}
+
+/* task 2 */
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.container2{
+    height: 500px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+/* .item{
+    border: 2px solid black;
+} */
+#item1{
+    grid-row: 1/4;
+    background-color: rgb(9, 198, 72);
+}
+#item2{
+    grid-column: 2/4;
+    background-color: rgb(9, 198, 72);
+}
+#item3{
+    grid-column: 4/5;
+    background-color: red;
+}
+#item4{
+    grid-column: 2/3;
+    background-color: yellow;
+}
+#item5{
+    grid-column: 3/3;
+    background-color: red;
+}
+#item6{
+    grid-row: 2/4;
+    grid-column: 4/5;
+    background-color:rgb(9, 198, 72) ;
+}
+#item7{
+    grid-row: 3/4;
+    background-color: red;
+}
+#item8{
+    grid-row: 3/4;
+    background-color: yellow;
+}
+
+/* section 3 */
+
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.container3{
+    display: grid;
+    width: 500px;
+    height: 300px;
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+#box1{
+    grid-column: 1/6;
+    background-color: blueviolet;
+}
+#box2{
+    grid-row: 2/4;
+    background-color: chartreuse;
+}
+#box3{
+    grid-column: 2/3;
+    background-color: red;
+}
+#box4{
+    grid-column: 3/4;
+    background-color: aqua;
+}
+#box5{
+    grid-column: 4/6;
+    background-color: brown;
+}
+#box6{
+    grid-column: 2/4;
+    background-color: brown;
+}
+#box7{
+    background-color: red;
+}
+#box8{
+    background-color: cyan;
+}
+
+/* section 4 */
+ 
+.section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.container4{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    gap: 5px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+.boxs{
+    border: 2px solid black;
+}
+#boxs1{
+    grid-column: 1/6;
+    background-color: blueviolet;
+}
+#boxs2{
+    grid-row: 1/4;
+    grid-column: 6/7;
+    background-color: rgb(229, 14, 168);
+}
+#boxs3{
+    grid-row: 2/4;
+    background-color: aqua;
+}
+#boxs4{
+    background-color: palevioletred;
+}
+#boxs5{
+    grid-row: 2/4;
+    grid-column: 3/4;
+    background-color: chartreuse;
+}
+#boxs6{
+    grid-column: 4/6;
+    grid-row: 2/4;
+    background-color: darkcyan;
+}
+#boxs7{
+    background-color: fuchsia;
+}
+#boxs8{
+    grid-column: 1/7;
+    background-color: lightgreen;
+}
+#boxs9{
+    grid-row: 5/7;
+    background-color: cornflowerblue;
+}
+#boxs10{
+    grid-row: 5/7;
+    background-color: coral;
+}
+#boxs11{
+    grid-column: 3/4;
+    background-color: cyan;
+}
+#boxs12{
+    grid-column: 4/5;
+    background-color: darkgoldenrod;
+}
+#boxs13{
+    grid-row: 5/7;
+    grid-column: 5/6;
+    background-color: crimson;
+}
+#boxs14{
+    grid-row: 5/7;
+    grid-column: 6/7;
+    background-color: rgb(151, 220, 255);
+}
+#boxs15{
+    background-color: blue;
+}
+#boxs16{
+    background-color: cornflowerblue;
+}
+
+/* Ludo section */
+
+.ludo-section{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.ludo-container{
+    display: grid;
+    width: 150px;
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+
+    
+   
+}
+.ludo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+#ludo-box1{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+#ludo-box2{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+#ludo-box3{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+#ludo-box4{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
